@@ -1,0 +1,14 @@
+{
+  "name": "Go Gin Dev Container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "go",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/sh"
+  },
+  "extensions": [
+    "golang.Go"
+  ],
+  "forwardPorts": [8080],
+  "remoteUser": "root"
+}

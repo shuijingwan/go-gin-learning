@@ -1,0 +1,8 @@
+/bin
+/dist
+/vendor/
+.env
+.env.test
+.idea/
+.vscode/
+.DS_Store
