@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-func sqrt(x float64) float64 {
-	z := 1.0 // // 初始猜测值
+func Sqrt(x float64) float64 {
+	z := 1.0 // 初始猜测值
 	for i := 0; i < 10; i++ {
 		z -= (z*z - x) / (2 * z)
 		fmt.Println("iteration", i, "z =", z)
@@ -15,5 +15,5 @@ func sqrt(x float64) float64 {
 }
 
 func main() {
-	fmt.Println("result:", sqrt(2))
+	fmt.Println("result:", Sqrt(2))
 }
