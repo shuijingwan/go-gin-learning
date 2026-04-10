@@ -43,9 +43,6 @@ go run main.go
 cd go-tour/[目录名]
 go run main.go
 ```
-## Git提交备注规范（适配仓库实际提交）
-规范写法：`docs: 完善 README 文档`（与仓库最新提交备注一致，规避此前doc:前缀错误）
-补充：结合“link dead”报错，可补充为：`docs: 完善 README 文档（修正链接提示，适配GitHub渲染）`
 ## 贡献者
 - shuijingwan (wangqiang)
 ## 开发语言
