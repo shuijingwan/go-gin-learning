@@ -1,4 +1,4 @@
-go-gin-learning（纯Markdown可直接复制版）
+go-gin-learning
 # go-gin-learning
 一个基于Go和Gin构建RESTful API的渐进式学习项目，包含数据库集成、身份认证及Docker部署。
 ## 项目介绍
