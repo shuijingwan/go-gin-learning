@@ -7,6 +7,7 @@ go-gin-learning
 ```plain text
 go-gin-learning/
 ├── .devcontainer/    # 容器开发环境配置
+├── go-atguigu/       # 【尚硅谷】Golang入门到实战教程丨一套精通GO语言 示例代码
 ├── go-tour/          # Go官方教程（A Tour of Go）示例代码
 ├── .gitignore        # Git忽略文件
 ├── README.md         # 项目说明文档
@@ -16,9 +17,11 @@ go-gin-learning/
 └── main.go           # Gin项目入口文件
 ```
 ## 核心目录及文件
-### 1. go-tour/
+### 1. go-atguigu/
+包含【尚硅谷】Golang入门到实战教程丨一套精通GO语言 相关示例代码。
+### 2. go-tour/
 包含Go官方教程（A Tour of Go）完整示例代码，可直接运行，用于巩固Go基础。
-### 2. 核心文件
+### 3. 核心文件
 - main.go：Gin项目入口文件，实现基础API功能。
 - docker-compose.yml：Docker部署配置，支持容器化开发部署。
 - go.mod & go.sum：Go模块依赖管理文件。
@@ -38,7 +41,12 @@ cd go-gin-learning
 ```bash
 go run main.go
 ```
-3. 运行go-tour示例代码
+3. 运行go-atguigu示例代码
+```bash
+cd go-atguigu/[目录名]
+go run main.go
+```
+4. 运行go-tour示例代码
 ```bash
 cd go-tour/[目录名]
 go run main.go
