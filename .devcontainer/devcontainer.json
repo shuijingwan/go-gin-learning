@@ -3,7 +3,7 @@
 
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "go",
-  "workspaceFolder": "/app",
+  "workspaceFolder": "/code",
 
   "shutdownAction": "stopCompose",
 
@@ -23,7 +23,5 @@
     }
   },
 
-  "remoteUser": "root",
-
-  "postCreateCommand": "apk update && apk add git"
+  "remoteUser": "root"
 }

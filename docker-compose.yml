@@ -1,24 +1,29 @@
-version: "3.8"
-
 services:
   go:
-    image: golang:1.26-alpine
-    container_name: go-gin-tutorial
-
-    working_dir: /app
-
+    build: .
+    container_name: go-gin-learning
+    working_dir: /code
     volumes:
-      - ./:/app
-
+      - ./:/code
     ports:
       - "8080:8080"
-
     tty: true
     stdin_open: true
-
     environment:
       - GOPROXY=https://goproxy.io,direct
       - GOSUMDB=sum.golang.google.cn
       - CGO_ENABLED=0
+      - DB_HOST=mysql80
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=mystrongpwd80
+      - DB_NAME=go_gin
+      - REDIS_HOST=redis72
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=myredispass
+    networks:
+      - services_dev-network
 
-    command: tail -f /dev/null
+networks:
+  services_dev-network:
+    external: true
